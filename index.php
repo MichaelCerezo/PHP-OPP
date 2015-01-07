@@ -21,9 +21,14 @@
 	//-----------------------------------------------------------------------------------------
 	// Example 2
 	//-----------------------------------------------------------------------------------------
-	$car = new car();
-	$house = new house();
-	$food = new food();
+	$car1 = new car();
+	$car2 = new car();
+
+	$house1 = new house();
+	$house2 = new house();
+
+	$food1 = new food();
+	$food2 = new food();
 
 	//-----------------------------------------------------------------------------------------
 	// Example 3 
@@ -46,4 +51,83 @@
 		public $dish = "tacos";
 		public $price = "1.50";
 	}
+
+	//-----------------------------------------------------------------------------------------
+	// Example 4 
+	//-----------------------------------------------------------------------------------------
+	$car1 = new Car();
+	print $car1->type;
+	// default type
+
+	$house1 = new House();
+	print $house1->type;
+	// default type
+
+	$food1 = new Food();
+	print $Food1->type;
+	// default type
+
+	//-----------------------------------------------------------------------------------------
+	// Example 5
+	//-----------------------------------------------------------------------------------------
+	public function Method( $argument1, $argument2){
+		// body
+		// body
+		// body
+	}
+	public function Method2( $argument1, $argument2){
+		// body
+		// body
+		// body
+	}
+	public function Method3( $argument1, $argument2){
+		// body
+		// body
+		// body
+	}
+
+	//-----------------------------------------------------------------------------------------
+	// Example 6
+	//-----------------------------------------------------------------------------------------
+	class car{
+		public $name = "default name";
+		public $type = "default type";
+		public $year = "2014";
+		public $price = "700";	
+		function getCar(){
+			return "{$this->name}" . "{this->type}";
+		}
+	}
+	$car1 = new Car();
+	$car1->brand = "honda";
+	$car1->type = "civic";
+	print "This car is a {$car1->Car()}";
+	
+	class house{
+		public $name = "default name";
+		public $type = "default type";
+		public $floors = "2";
+		public $price = "1500";
+		function getHouse(){
+			return "{$this->name}" . "{this->type}";
+		}
+	}
+	$house1 = new House();
+	$house1->name = "apartment";
+	$house1->type = "big";
+	print "This house is a {$house1->House()}";
+	
+	class food{
+		public $name = "default name";
+		public $type = "default type";
+		public $dish = "tacos";
+		public $price = "1.50";
+		function getFood(){
+			return "{$this->name}" . "{this->type}";
+		}
+	}
+	$food1 = new Food();
+	$food1->name = "taco";
+	$food1->type = "good";
+	print "This food is a {$food1->Food()}";
  ?>

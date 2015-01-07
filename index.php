@@ -32,7 +32,7 @@
 		public $name = "default name";
 		public $type = "toyota";
 		public $doors = "4";
-		public $price = "500";	
+		public $price = "600";	
 	}
 	class house{
 		public $name = "default name";
